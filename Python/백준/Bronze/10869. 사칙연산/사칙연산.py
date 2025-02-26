@@ -1,6 +1,2 @@
 a,b=map(int,input().split())
-print(a+b)
-print(a-b)
-print(a*b)
-print(a//b)
-print(a%b)
+print(f'{a+b}\n{a-b}\n{a*b}\n{a//b}\n{a%b}')
