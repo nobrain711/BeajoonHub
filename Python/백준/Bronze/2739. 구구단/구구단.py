@@ -1,3 +1,2 @@
 x=int(input())
-for i in range(1,10,1):
-	print(f'{x} * {i} = {x*i}')
+print('\n'.join(f'{x} * {i} = {x*i}'for i in range(1,10)))
