@@ -1,3 +1,2 @@
 import sys
-for _ in range(int(sys.stdin.readline())):
-    print(sum(map(int,sys.stdin.readline().split())))
+print(*(sum(map(int,sys.stdin.readline().split()))for _ in range(int(sys.stdin.readline()))),sep="\n")
