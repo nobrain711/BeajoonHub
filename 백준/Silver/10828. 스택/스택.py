@@ -1,6 +1,8 @@
-number = int(input())
+import sys
+number = int(sys.stdin.readline())
+items = [list(sys.stdin.readline().split()) for _ in range(number)]
+
 stack = []
-items = [list(input().split()) for _ in range(number)]
 
 for item in items:
   if item[0] == 'push':
