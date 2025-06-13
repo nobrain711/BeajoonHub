@@ -1,13 +1,12 @@
 def solution(people, limit):
-    boat = 0
-    people.sort(reverse=True)
+    answer = 0
+    people = sorted(people, reverse=True)
     
-    for i in people:
-        total = i
-        
-        if total + people[-1] <= limit: 
+    for p in people:
+        if p + people[-1] <= limit:
+            print(p + people[-1])
             people.pop()
-        
-        boat += 1
-        
-    return boat
+            
+        answer += 1
+    
+    return answer
