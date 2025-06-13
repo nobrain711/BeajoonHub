@@ -1,8 +1,9 @@
 import sys
 
-input_count = int(sys.stdin.readline())
-numbers = [int(sys.stdin.readline()) for _ in range(input_count)]
+input = sys.stdin.read
+data = input().splitlines()
 
+numbers = list(map(int, data[1:]))
 numbers.sort()
-for number in numbers:
-  print(number) 
+
+sys.stdout.write('\n'.join(map(str, numbers)) + '\n')
