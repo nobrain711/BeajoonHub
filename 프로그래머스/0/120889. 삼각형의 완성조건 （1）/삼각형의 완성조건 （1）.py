@@ -1,5 +1,3 @@
 def solution(sides):
-    sides.sort()
-    max_side=sides.pop()
-    sum_sides=sum(sides)
-    return (1 if max_side<sum_sides else 2)
+    a,b,c=sides
+    return (1 if(a+b>c and b+c>a and a+c>b) else 2)
