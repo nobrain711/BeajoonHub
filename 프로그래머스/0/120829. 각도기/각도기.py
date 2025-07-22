@@ -1,5 +1,5 @@
 def solution(angle):
-    if (0 < angle and angle < 90):
+    if (0 < angle < 90):
         return 1
     elif (angle == 90):
         return 2
